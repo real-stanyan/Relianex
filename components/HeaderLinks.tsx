@@ -1,10 +1,13 @@
 "use client";
-
 import * as React from "react";
 import Link from "next/link";
-import { CircleCheckIcon, CircleHelpIcon, CircleIcon } from "lucide-react";
 import Image from "next/image";
-
+import {
+  Menu,
+  CircleCheckIcon,
+  CircleHelpIcon,
+  CircleIcon,
+} from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -21,53 +24,53 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuLabel,
+} from "@/components/ui/dropdown-menu";
 
-const components: { title: string; href: string; description: string }[] = [
+const components = [
   {
     title: "Alert Dialog",
     href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+    description: "A modal dialog...",
   },
   {
     title: "Hover Card",
     href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
+    description: "Preview content behind a link.",
   },
   {
     title: "Progress",
     href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+    description: "Show task progress.",
   },
   {
     title: "Scroll-area",
     href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    description: "Separate content visually.",
   },
   {
     title: "Tabs",
     href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+    description: "Layered sections displayed one at a time.",
   },
   {
     title: "Tooltip",
     href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+    description: "Popup with extra info.",
   },
 ];
 
 export default function HeaderLinks() {
   return (
-    <div
-      className={`
-    flex justify-around items-center gap-2
-    `}
-    >
-      <NavigationMenu viewport={false}>
+    <div className="flex items-center gap-4 z-50">
+      {/* Desktop: NavigationMenu */}
+      <NavigationMenu viewport={false} className="hidden lg:flex">
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuTrigger>Home</NavigationMenuTrigger>
@@ -75,10 +78,7 @@ export default function HeaderLinks() {
               <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                 <li className="row-span-3">
                   <NavigationMenuLink asChild>
-                    <a
-                      className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b p-6 no-underline outline-hidden select-none focus:shadow-md"
-                      href="/"
-                    >
+                    <a className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b p-6 no-underline outline-hidden select-none">
                       <div className="mt-4 mb-2 text-lg font-medium">
                         shadcn/ui
                       </div>
@@ -100,65 +100,50 @@ export default function HeaderLinks() {
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
+
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+            <NavigationMenuTrigger>Services</NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                {components.map((component) => (
-                  <ListItem
-                    key={component.title}
-                    title={component.title}
-                    href={component.href}
-                  >
-                    {component.description}
+              <ul className="grid w-[500px] gap-2 md:grid-cols-2 lg:w-[600px]">
+                {components.map((c) => (
+                  <ListItem key={c.title} title={c.title} href={c.href}>
+                    {c.description}
                   </ListItem>
                 ))}
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
+
           <NavigationMenuItem>
             <NavigationMenuLink
               asChild
               className={navigationMenuTriggerStyle()}
             >
-              <Link href="/docs">Docs</Link>
+              <Link href="/docs">Solutions</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
+
           <NavigationMenuItem>
-            <NavigationMenuTrigger>List</NavigationMenuTrigger>
+            <NavigationMenuTrigger>Case Studies</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[300px] gap-4">
                 <li>
                   <NavigationMenuLink asChild>
-                    <Link href="#">
-                      <div className="font-medium">Components</div>
-                      <div className="text-muted-foreground">
-                        Browse all components in the library.
-                      </div>
-                    </Link>
+                    <Link href="#">Components</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="#">
-                      <div className="font-medium">Documentation</div>
-                      <div className="text-muted-foreground">
-                        Learn how to use the library.
-                      </div>
-                    </Link>
+                    <Link href="#">Documentation</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="#">
-                      <div className="font-medium">Blog</div>
-                      <div className="text-muted-foreground">
-                        Read our latest blog posts.
-                      </div>
-                    </Link>
+                    <Link href="#">Blog</Link>
                   </NavigationMenuLink>
                 </li>
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
+
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Simple</NavigationMenuTrigger>
+            <NavigationMenuTrigger>About Us</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[200px] gap-4">
                 <li>
@@ -175,25 +160,26 @@ export default function HeaderLinks() {
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
+
           <NavigationMenuItem>
-            <NavigationMenuTrigger>With Icon</NavigationMenuTrigger>
+            <NavigationMenuTrigger>Contact</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[200px] gap-4">
                 <li>
                   <NavigationMenuLink asChild>
-                    <Link href="#" className="flex-row items-center gap-2">
+                    <Link href="#" className="flex items-center gap-2">
                       <CircleHelpIcon />
                       Backlog
                     </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="#" className="flex-row items-center gap-2">
+                    <Link href="#" className="flex items-center gap-2">
                       <CircleIcon />
                       To Do
                     </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="#" className="flex-row items-center gap-2">
+                    <Link href="#" className="flex items-center gap-2">
                       <CircleCheckIcon />
                       Done
                     </Link>
@@ -204,33 +190,112 @@ export default function HeaderLinks() {
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
+
+      {/* Language selector */}
       <Select>
         <SelectTrigger className="w-[80px]">
           <SelectValue placeholder="EN" />
         </SelectTrigger>
         <SelectContent>
-          <SelectItem value="CN" className="flex justify-around items-center">
+          <SelectItem value="CN" className="flex items-center gap-2">
             <Image
               src={"/language_icon/CN_language.webp"}
-              width={100}
-              height={100}
-              alt="CN_language_icon"
-              className="w-[50%]"
+              width={20}
+              height={20}
+              alt="CN"
             />
-            <h1>CN</h1>
+            <span>CN</span>
           </SelectItem>
-          <SelectItem value="EN" className="flex justify-around items-center">
+          <SelectItem value="EN" className="flex items-center gap-2">
             <Image
               src={"/language_icon/EN_language.webp"}
-              width={100}
-              height={100}
-              alt="EN_language_icon"
-              className="w-[50%]"
+              width={20}
+              height={20}
+              alt="EN"
             />
-            <h1>EN</h1>
+            <span>EN</span>
           </SelectItem>
         </SelectContent>
       </Select>
+
+      <div className="hidden lg:block bg-[var(--card)] text-[var(--text)] p-3 rounded-2xl font-semibold">
+        Get in Touch
+      </div>
+
+      {/* Mobile: DropdownMenu */}
+      <DropdownMenu>
+        <DropdownMenuTrigger className="lg:hidden inline-flex items-center gap-1 rounded-xl px-3 py-2 text-[var(--foreground)]">
+          <Menu size={30} />
+        </DropdownMenuTrigger>
+        <DropdownMenuContent className="w-64">
+          <DropdownMenuLabel>Navigation</DropdownMenuLabel>
+          <DropdownMenuSeparator />
+          <DropdownMenuItem asChild>
+            <Link href="/">Home</Link>
+          </DropdownMenuItem>
+
+          <DropdownMenuLabel className="mt-2">Services</DropdownMenuLabel>
+          {components.slice(0, 4).map((c) => (
+            <DropdownMenuItem key={c.title} asChild>
+              <Link href={c.href} className="flex flex-col">
+                <span className="font-medium">{c.title}</span>
+                <span className="text-muted-foreground text-xs line-clamp-1">
+                  {c.description}
+                </span>
+              </Link>
+            </DropdownMenuItem>
+          ))}
+
+          <DropdownMenuSeparator />
+          <DropdownMenuItem asChild>
+            <Link href="/docs" className="font-medium">
+              Solutions
+            </Link>
+          </DropdownMenuItem>
+
+          <DropdownMenuLabel className="mt-2">Case Studies</DropdownMenuLabel>
+          <DropdownMenuItem asChild>
+            <Link href="#">Components</Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem asChild>
+            <Link href="#">Documentation</Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem asChild>
+            <Link href="#">Blog</Link>
+          </DropdownMenuItem>
+
+          <DropdownMenuLabel className="mt-2">About Us</DropdownMenuLabel>
+          <DropdownMenuItem asChild>
+            <Link href="#">Components</Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem asChild>
+            <Link href="#">Documentation</Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem asChild>
+            <Link href="#">Blocks</Link>
+          </DropdownMenuItem>
+
+          <DropdownMenuLabel className="mt-2">Contact</DropdownMenuLabel>
+          <DropdownMenuItem asChild>
+            <Link href="#" className="flex items-center gap-2">
+              <CircleHelpIcon className="h-4 w-4" />
+              Backlog
+            </Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem asChild>
+            <Link href="#" className="flex items-center gap-2">
+              <CircleIcon className="h-4 w-4" />
+              To Do
+            </Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem asChild>
+            <Link href="#" className="flex items-center gap-2">
+              <CircleCheckIcon className="h-4 w-4" />
+              Done
+            </Link>
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
     </div>
   );
 }
