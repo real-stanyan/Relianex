@@ -19,20 +19,38 @@ const Header = () => {
 
       {/* 导航链接部分保持不变 */}
       <div className="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
-        <a href="#" className="text-blue-600 border-b-2 border-blue-600 pb-1">
+        <a
+          href="#mission"
+          className="text-blue-600 border-b-2 border-blue-600 pb-1"
+        >
           Mission
         </a>
-        <a href="#" className="hover:text-blue-600 transition-colors">
+        <a
+          href="#capabilities"
+          className="hover:text-blue-600 transition-colors"
+        >
           Capabilities
         </a>
-        <a href="#" className="hover:text-blue-600 transition-colors">
-          Services
+        <a
+          href="#project_experience"
+          className="hover:text-blue-600 transition-colors"
+        >
+          Experience
         </a>
-        <a href="#" className="hover:text-blue-600 transition-colors">
-          Methodology
+        <a
+          href="#scenario_section"
+          className="hover:text-blue-600 transition-colors"
+        >
+          Scenario
         </a>
-        <a href="#" className="hover:text-blue-600 transition-colors">
+        <a
+          href="#customer_value"
+          className="hover:text-blue-600 transition-colors"
+        >
           Value
+        </a>
+        <a href="#contact" className="hover:text-blue-600 transition-colors">
+          Contact
         </a>
       </div>
 

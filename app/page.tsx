@@ -60,7 +60,10 @@ export default function RelianexLandingPage() {
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
       {/* --- Hero Section --- */}
-      <section className="relative text-white py-32 px-6 overflow-hidden bg-[url('/bg/home_bg.webp')] bg-cover bg-top bg-no-repeat bg-blend-overlay">
+      <section
+        id="mission"
+        className="relative text-white py-32 px-6 overflow-hidden bg-[url('/bg/home_bg.webp')] bg-cover bg-top bg-no-repeat bg-blend-overlay"
+      >
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="inline-block px-3 py-1 bg-cyan-400/10 text-cyan-400 text-xs font-bold tracking-widest uppercase rounded-full mb-6">
             Precision Architect
@@ -83,7 +86,7 @@ export default function RelianexLandingPage() {
       </section>
 
       {/* --- Core Capabilities --- */}
-      <section className="py-24 px-6 bg-slate-50">
+      <section id="capabilities" className="py-24 px-6 bg-slate-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-blue-950 mb-12">
             Core Capabilities
@@ -135,7 +138,10 @@ export default function RelianexLandingPage() {
       </section>
 
       {/* --- Our Services --- */}
-      <section className="py-24 px-6 bg-white relative overflow-hidden">
+      <section
+        id="our_service"
+        className="py-24 px-6 bg-white relative overflow-hidden"
+      >
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="flex justify-between items-end mb-16">
             <div>
@@ -217,7 +223,10 @@ export default function RelianexLandingPage() {
       </section>
 
       {/* --- Project Experience --- */}
-      <section className="py-24 px-6 bg-white relative overflow-hidden">
+      <section
+        id="project_experience"
+        className="py-24 px-6 bg-white relative overflow-hidden"
+      >
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="flex justify-between items-end mb-16">
             <div>
@@ -259,7 +268,10 @@ export default function RelianexLandingPage() {
       </section>
 
       {/* --- Scenario Section --- */}
-      <section className="py-24 bg-blue-950 text-white px-6">
+      <section
+        id="scenario_section"
+        className="py-24 bg-blue-950 text-white px-6"
+      >
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
@@ -309,7 +321,10 @@ export default function RelianexLandingPage() {
       </section>
 
       {/* --- Customer Value --- */}
-      <section className="py-24 px-6 bg-slate-50 text-center">
+      <section
+        id="customer_value"
+        className="py-24 px-6 bg-slate-50 text-center"
+      >
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-blue-950 mb-4">
             Customer Value
@@ -356,7 +371,7 @@ export default function RelianexLandingPage() {
       </section>
 
       {/* --- Contact / Deployment --- */}
-      <section className="py-24 px-6 bg-white">
+      <section id="contact" className="py-24 px-6 bg-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>
             <h2 className="text-4xl font-bold text-blue-950 mb-6">
