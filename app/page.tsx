@@ -69,7 +69,8 @@ export default function RelianexLandingPage() {
             RELIANEX
           </h1>
           <p className="text-2xl md:text-3xl text-slate-300 font-light max-w-2xl mb-8 leading-snug">
-            Combining an engineer's perspective with a user-experience mindset.
+            Combining an engineer&apos;s perspective with a user-experience
+            mindset.
           </p>
           <div className="border-l-4 border-cyan-400 pl-6 py-2 max-w-xl">
             <p className="text-slate-400 text-sm md:text-base">
