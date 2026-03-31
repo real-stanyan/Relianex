@@ -77,7 +77,7 @@ export default function RelianexLandingPage() {
           </p>
           <div className="border-l-4 border-cyan-400 pl-6 py-2 max-w-xl">
             <p className="text-slate-400 text-sm md:text-base">
-              Helping Chinese automakers achieve high-quality smart cabin
+              Helping global automakers achieve high-quality smart cabin
               deployment in the Australian market through rigorous validation
               and architectural excellence.
             </p>
