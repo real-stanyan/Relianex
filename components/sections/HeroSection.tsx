@@ -6,14 +6,8 @@ export default function HeroSection() {
     <Section
       id="mission"
       tone="ink"
-      className="py-28 md:py-36 bg-[url('/bg/home_bg.webp')] bg-cover bg-top bg-no-repeat"
+      className="py-28 md:py-36 bg-[url('/bg/home_bg.webp')] bg-cover bg-top bg-no-repeat before:absolute before:inset-0 before:bg-[var(--ink)]/60 before:content-['']"
     >
-      {/* Overlay tint — sits between background image and content */}
-      <div
-        className="absolute inset-0 bg-[var(--ink)]/60 pointer-events-none"
-        aria-hidden="true"
-      />
-
       <Eyebrow tone="ink">Precision Engineering</Eyebrow>
       <h1 className="text-5xl md:text-6xl font-semibold tracking-tight mb-6 text-[var(--text-inverse)]">
         Relianex
