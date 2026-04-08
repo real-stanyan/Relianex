@@ -70,8 +70,7 @@
   /* Accent */
   --accent-gray: #B8B8BA;
 
-  /* Backwards-compatibility aliases (consumed by Footer.tsx / HeaderLinks.tsx) */
-  --text-legacy: #ffffff;
+  /* shadcn/ui legacy tokens (preserved for unused-but-shipped components) */
   --background: var(--surface);
   --foreground: var(--text);
   --card: #073aad;
