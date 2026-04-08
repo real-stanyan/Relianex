@@ -1,30 +1,37 @@
-import React from "react";
+import { Section } from "@/components/ui/section";
+import { Eyebrow } from "@/components/ui/eyebrow";
 
 export default function HeroSection() {
   return (
-    <section
+    <Section
       id="mission"
-      className="relative text-white py-32 px-6 overflow-hidden bg-[url('/bg/home_bg.webp')] bg-cover bg-top bg-no-repeat bg-blend-overlay"
+      tone="ink"
+      className="py-28 md:py-36 bg-[url('/bg/home_bg.webp')] bg-cover bg-top bg-no-repeat"
     >
-      <div className="max-w-7xl mx-auto relative z-10">
-        <div className="inline-block px-3 py-1 bg-cyan-400/10 text-cyan-400 text-xs font-bold tracking-widest uppercase rounded-full mb-6">
-          Precision Architect
-        </div>
-        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
-          RELIANEX
-        </h1>
-        <p className="text-2xl md:text-3xl text-slate-300 font-light max-w-2xl mb-8 leading-snug">
-          Combining an engineer&apos;s perspective with a user-experience
-          mindset.
+      {/* Overlay tint — sits between background image and content */}
+      <div
+        className="absolute inset-0 bg-[var(--ink)]/60 pointer-events-none"
+        aria-hidden="true"
+      />
+
+      <Eyebrow tone="ink">Precision Engineering</Eyebrow>
+      <h1 className="text-5xl md:text-6xl font-semibold tracking-tight mb-6 text-[var(--text-inverse)]">
+        Relianex
+      </h1>
+      <p className="text-xl md:text-2xl text-[var(--text-inverse)]/80 max-w-2xl mb-8 leading-snug">
+        Combining an engineer&apos;s perspective with a user-experience mindset.
+      </p>
+      <div className="flex items-start gap-3 max-w-xl">
+        <span
+          className="block w-6 h-px bg-[var(--accent-gray)]/60 mt-2 shrink-0"
+          aria-hidden="true"
+        />
+        <p className="text-sm md:text-base text-[var(--text-inverse)]/70 leading-relaxed">
+          Helping global automakers achieve high-quality smart cabin deployment
+          in the Australian market through rigorous validation and
+          architectural excellence.
         </p>
-        <div className="border-l-4 border-cyan-400 pl-6 py-2 max-w-xl">
-          <p className="text-slate-400 text-sm md:text-base">
-            Helping global automakers achieve high-quality smart cabin
-            deployment in the Australian market through rigorous validation
-            and architectural excellence.
-          </p>
-        </div>
       </div>
-    </section>
+    </Section>
   );
 }
