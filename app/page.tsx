@@ -1,4 +1,3 @@
-import React from "react";
 import HeroSection from "@/components/sections/HeroSection";
 import CoreCapabilities from "@/components/sections/CoreCapabilities";
 import OurServices from "@/components/sections/OurServices";
@@ -10,7 +9,7 @@ import PageFooter from "@/components/sections/PageFooter";
 
 export default function RelianexLandingPage() {
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
+    <main className="min-h-screen font-sans">
       <HeroSection />
       <CoreCapabilities />
       <OurServices />
@@ -19,6 +18,6 @@ export default function RelianexLandingPage() {
       <CustomerValue />
       <ContactSection />
       <PageFooter />
-    </div>
+    </main>
   );
 }
