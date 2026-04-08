@@ -72,9 +72,12 @@ const Header = () => {
           })}
         </div>
 
-        <button className="hidden md:block bg-blue-900 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-blue-800 transition-colors">
+        <a
+          href="#contact"
+          className="hidden md:inline-block bg-blue-900 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-blue-800 transition-colors"
+        >
           Contact
-        </button>
+        </a>
 
         {/* Mobile menu toggle */}
         <button
