@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslations } from "next-intl";
 import LogoLoop from "@/components/LogoLoop";
 
 const imageLogos = [
@@ -40,6 +41,7 @@ const imageLogos = [
 ];
 
 export default function ProjectExperienceSection() {
+  const t = useTranslations("projects");
   return (
     <section
       id="project_experience"
@@ -49,13 +51,9 @@ export default function ProjectExperienceSection() {
         <div className="flex justify-between items-end mb-16">
           <div>
             <h2 className="text-3xl font-bold text-blue-950 mb-4 uppercase tracking-wide">
-              Project Experience
+              {t("heading")}
             </h2>
-            <p className="text-slate-500 max-w-md">
-              Transforming complex business challenges into elegant digital
-              solutions. Explore a selection of our most impactful enterprise
-              work.
-            </p>
+            <p className="text-slate-500 max-w-md">{t("intro")}</p>
           </div>
           <div className="text-8xl font-black text-slate-100 absolute right-0 top-0 -z-10 select-none">
             02
@@ -79,7 +77,7 @@ export default function ProjectExperienceSection() {
             scaleOnHover
             fadeOut
             fadeOutColor="#ffffff"
-            ariaLabel="Technology partners"
+            ariaLabel={t("ariaLabel")}
           />
         </div>
       </div>

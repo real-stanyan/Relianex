@@ -1,0 +1,138 @@
+{
+  "metadata": {
+    "title": "RELIANEX",
+    "description": "Combining an engineer's perspective with a user-experience mindset."
+  },
+  "header": {
+    "nav": {
+      "mission": "Mission",
+      "capabilities": "Capabilities",
+      "experience": "Experience",
+      "scenario": "Scenario",
+      "value": "Value",
+      "contact": "Contact"
+    },
+    "cta": "Contact",
+    "menuToggle": "Toggle menu",
+    "menuClose": "Close menu"
+  },
+  "languageToggle": {
+    "en": "EN",
+    "zh": "中文",
+    "ariaLabel": "Switch language"
+  },
+  "hero": {
+    "eyebrow": "Precision Engineering",
+    "tagline": "Combining an engineer's perspective with a user-experience mindset.",
+    "body": "Helping global automakers achieve high-quality smart cabin deployment in the Australian market through rigorous validation and architectural excellence."
+  },
+  "capabilities": {
+    "eyebrow": "Capabilities",
+    "heading": "Core Capabilities",
+    "items": {
+      "local": {
+        "title": "Local Validation Capability",
+        "description": "Expert real-world driving and localized network testing across complex Australian geographies to ensure connectivity reliability."
+      },
+      "discovery": {
+        "title": "Issue Discovery Capability",
+        "description": "Advanced diagnostic methodologies for identifying hard-to-simulate defects that only emerge in localized environmental conditions."
+      },
+      "experience": {
+        "title": "Experience Optimization",
+        "description": "User-centric refinement focused on Australian driver habits, regional UI preferences, and intuitive interface logic."
+      }
+    }
+  },
+  "services": {
+    "eyebrow": "01 / Services",
+    "heading": "Our Services",
+    "intro": "Comprehensive smart cabin solutions tailored for the Pacific market.",
+    "items": {
+      "navigation": {
+        "title": "Navigation & Map Validation",
+        "description": "Precise point-of-interest for Australian GIS data, lane-level accuracy, and regional POI integration across major metro areas."
+      },
+      "tbox": {
+        "title": "T-Box & Vehicle Communication",
+        "description": "Robust testing of telematics hardware against local 4G/5G carrier protocols and rural signal attenuation zones."
+      },
+      "voice": {
+        "title": "Voice & AI Assistant",
+        "description": "Natural Language Processing validation for Australian accents and local semantic nuances in high-noise cabin environments."
+      },
+      "system": {
+        "title": "System Validation & Landing",
+        "description": "End-to-end integration testing and compliance verification for smooth product launch and vehicle delivery."
+      }
+    }
+  },
+  "projects": {
+    "heading": "Project Experience",
+    "intro": "Transforming complex business challenges into elegant digital solutions. Explore a selection of our most impactful enterprise work.",
+    "ariaLabel": "Technology partners"
+  },
+  "scenario": {
+    "heading": "Scenario-driven + User-experience-oriented",
+    "body": "Our unique architectural approach ensures that technical verification translates directly into meaningful user benefits. We don't just test functionality; we validate human-vehicle synergy.",
+    "stats": {
+      "experience": {
+        "value": "20+",
+        "title": "Proven Experience",
+        "description": "Automotive models successfully launched in Australia under our supervision."
+      },
+      "compliance": {
+        "value": "100%",
+        "title": "Compliance Rate",
+        "description": "Full adherence to Australian safety and data privacy regulations."
+      }
+    },
+    "imageAlt": "Highway driving scenario"
+  },
+  "value": {
+    "heading": "Customer Value",
+    "intro": "Quantifiable advantages for your global expansion strategy.",
+    "items": {
+      "risk": {
+        "title": "Reduce Launch Risks",
+        "description": "Mitigate regulatory and technical failures before they reach the market."
+      },
+      "ux": {
+        "title": "Enhance User Experience",
+        "description": "Deliver localized features that resonate with the Australian driver persona."
+      },
+      "cost": {
+        "title": "Lower Costs",
+        "description": "Streamline validation cycles through local expertise and automated telemetry."
+      }
+    }
+  },
+  "contact": {
+    "heading": "Ready to deploy?",
+    "intro": "Our consultants are ready to provide a detailed audit of your smart cabin architecture for the Australian market.",
+    "consultationHeading": "Consultation Services",
+    "consultation": {
+      "regulatory": "Market Entry Regulatory Audit",
+      "feasibility": "Technical Feasibility Studies",
+      "benchmark": "On-road Performance Benchmarking"
+    },
+    "formHeading": "Direct Inquiry",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "Your Name",
+      "organization": "Organization",
+      "organizationPlaceholder": "Automotive Brand",
+      "requirement": "Requirement",
+      "requirementPlaceholder": "How can we assist your deployment?",
+      "submit": "Submit Request"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 RELIANEX. Precision Architecture in Automotive Testing. Empowering global innovation with local precision.",
+    "links": {
+      "privacy": "PRIVACY POLICY",
+      "terms": "TERMS OF SERVICE",
+      "compliance": "COMPLIANCE"
+    }
+  }
+}

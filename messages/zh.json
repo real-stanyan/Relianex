@@ -1,0 +1,138 @@
+{
+  "metadata": {
+    "title": "RELIANEX",
+    "description": "以工程师的视角，融合用户体验思维。"
+  },
+  "header": {
+    "nav": {
+      "mission": "使命",
+      "capabilities": "能力",
+      "experience": "项目经验",
+      "scenario": "场景",
+      "value": "价值",
+      "contact": "联系我们"
+    },
+    "cta": "联系我们",
+    "menuToggle": "切换菜单",
+    "menuClose": "关闭菜单"
+  },
+  "languageToggle": {
+    "en": "EN",
+    "zh": "中文",
+    "ariaLabel": "切换语言"
+  },
+  "hero": {
+    "eyebrow": "精密工程",
+    "tagline": "以工程师的视角，融合用户体验思维。",
+    "body": "通过严谨的验证与卓越的架构能力，助力全球车企在澳大利亚市场实现高质量的智能座舱落地。"
+  },
+  "capabilities": {
+    "eyebrow": "核心能力",
+    "heading": "核心能力",
+    "items": {
+      "local": {
+        "title": "本地化验证能力",
+        "description": "覆盖澳大利亚复杂地理环境的实地驾驶与本地化网络测试，确保车联网连接的可靠性。"
+      },
+      "discovery": {
+        "title": "问题发现能力",
+        "description": "采用先进的诊断方法，识别仅在本地化环境条件下才会暴露、难以仿真复现的缺陷。"
+      },
+      "experience": {
+        "title": "体验优化能力",
+        "description": "围绕澳大利亚驾驶员习惯、本地 UI 偏好与直觉化交互逻辑的用户中心打磨。"
+      }
+    }
+  },
+  "services": {
+    "eyebrow": "01 / 服务",
+    "heading": "我们的服务",
+    "intro": "面向太平洋市场的全场景智能座舱解决方案。",
+    "items": {
+      "navigation": {
+        "title": "导航与地图验证",
+        "description": "面向澳大利亚 GIS 数据的精确 POI 标定、车道级精度，以及主要城市群的本地 POI 整合。"
+      },
+      "tbox": {
+        "title": "T-Box 与车联网通信",
+        "description": "针对本地 4G/5G 运营商协议与偏远地区信号衰减区域的车联网硬件可靠性测试。"
+      },
+      "voice": {
+        "title": "语音与 AI 助手",
+        "description": "针对澳大利亚口音与本地语义细节、在高噪座舱环境下的自然语言处理验证。"
+      },
+      "system": {
+        "title": "系统验证与落地",
+        "description": "端到端集成测试与合规验证，保障产品顺利上市与整车交付。"
+      }
+    }
+  },
+  "projects": {
+    "heading": "项目经验",
+    "intro": "将复杂的商业挑战转化为优雅的数字化解决方案。一览我们最具影响力的企业级项目。",
+    "ariaLabel": "技术合作伙伴"
+  },
+  "scenario": {
+    "heading": "场景驱动 + 用户体验导向",
+    "body": "我们独特的架构方法，确保技术验证可以直接转化为对用户有意义的价值。我们不止测试功能，更验证人车协同。",
+    "stats": {
+      "experience": {
+        "value": "20+",
+        "title": "丰富经验",
+        "description": "在我们的支持下成功在澳大利亚上市的汽车车型数。"
+      },
+      "compliance": {
+        "value": "100%",
+        "title": "合规通过率",
+        "description": "完全满足澳大利亚安全与数据隐私法规要求。"
+      }
+    },
+    "imageAlt": "高速公路驾驶场景"
+  },
+  "value": {
+    "heading": "客户价值",
+    "intro": "为您的全球化扩张战略提供可量化的优势。",
+    "items": {
+      "risk": {
+        "title": "降低上市风险",
+        "description": "在产品进入市场前提前规避监管与技术风险。"
+      },
+      "ux": {
+        "title": "提升用户体验",
+        "description": "交付贴合澳大利亚驾驶员画像的本地化功能。"
+      },
+      "cost": {
+        "title": "降低成本",
+        "description": "通过本地专家与自动化遥测，压缩验证周期。"
+      }
+    }
+  },
+  "contact": {
+    "heading": "准备好落地了吗？",
+    "intro": "我们的顾问团队可为您提供面向澳大利亚市场的智能座舱架构详尽审计。",
+    "consultationHeading": "咨询服务",
+    "consultation": {
+      "regulatory": "市场准入合规审计",
+      "feasibility": "技术可行性研究",
+      "benchmark": "实路性能基准测试"
+    },
+    "formHeading": "直接咨询",
+    "form": {
+      "name": "姓名",
+      "namePlaceholder": "您的姓名",
+      "organization": "公司/品牌",
+      "organizationPlaceholder": "汽车品牌名称",
+      "requirement": "需求描述",
+      "requirementPlaceholder": "我们可以如何协助您的落地？",
+      "submit": "提交咨询"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 RELIANEX. 汽车测试领域的精密架构。以本地化的精准，赋能全球创新。",
+    "links": {
+      "privacy": "隐私政策",
+      "terms": "服务条款",
+      "compliance": "合规声明"
+    }
+  }
+}
